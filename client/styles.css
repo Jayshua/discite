@@ -1,0 +1,72 @@
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+html, body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   font-size: 24px;
+   font-family: Arial;
+   padding: 0.1px;
+}
+
+.wrapper {
+   width: 50%;
+   max-width: 1500px;
+   margin: auto;
+   margin-top: 1em;
+   transition: box-shadow 0.5s;
+}
+
+.wrapper.success {
+   /*box-shadow: 0 0 12px green;*/
+}
+
+.verse-input, .reference-input, .verse-overlay {
+   width: 100%;
+   font-size: inherit;
+   font-family: inherit;
+   outline: none;
+}
+
+.verse-input, .verse-overlay {
+   padding: 0.5em;
+}
+
+.reference-input {
+   height: 2em;
+   text-align: center;
+}
+
+.verse-input {
+   border-top: none;
+   background-color: transparent;
+   min-height: 4em;
+   resize: none;
+   vertical-align: middle;
+}
+
+.verse-overlay {
+   position: absolute;
+   max-width: 50vw;
+   border: solid thin transparent;
+   border-top: none;
+   z-index: -1;
+   color: #ddd;
+   opacity: 0;
+   transition: opacity 0.5s, color 0.5s;
+}
+.verse-overlay.visible {
+   opacity: 1;
+}
+.success .verse-overlay {
+   transition: none;
+   color: black;
+   opacity: 1;
+}
+
+
+#mistakesCounter {
+   text-align: center;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "discite",
+  "version": "0.0.1",
+  "description": "A tool for learning Bible verses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bible-passage-reference-parser": "^1.0.0",
+    "compression": "^1.6.1",
+    "connect": "^3.4.1",
+    "express": "^4.13.4",
+    "knex": "^0.9.0",
+    "mysql": "~2.9.0",
+    "serve-static": "^1.10.2"
+  },
+  "author": "Jayshua Nelson",
+  "license": "SEE LICENSE IN readme.md",
+  "devDependencies": {
+    "xr": "^0.1.15"
+  }
+}
